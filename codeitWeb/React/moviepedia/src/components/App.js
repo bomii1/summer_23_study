@@ -26,7 +26,9 @@ function App() {
         } else {
             setItems([...items, ...reviews]);
         }
-        setOffset(options.offset + options.limit);
+        //console.log(options.offset);
+        setOffset(options.offset + options.limit + 10);
+        console.log(offset);
     }
 
     const handleLoadMore = async () => {
